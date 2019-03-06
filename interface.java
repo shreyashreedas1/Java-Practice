@@ -1,21 +1,23 @@
-public interface Fly{
+interface Fly{
   public void goDown();
   public void goForward();
   }
   
-  public class Duck implements Fly{
+   class Duck implements Fly {
     public void goDown(){
       System.out.println("Duck fly Down");
       }
-      public void goForward(){
+
+      public void goForward() {
       System.out.println("Duck fly forward");
       }
    }
    
-  public class Finch implements Fly{
+   class Finch implements Fly{
     public void goDown(){
       System.out.println("Finch fly Down");
       }
+
       public void goForward(){
       System.out.println("Finch fly forward");
       }
@@ -23,13 +25,29 @@ public interface Fly{
  
  
  public class Interface{
-    public static void main(String[] s){
+    public static void main(String[] args){
         Duck duck=new Duck();
         Finch finch=new Finch();
-        bird.goDown();
-        bird.goForward();
+        duck.goDown();
+        duck.goForward();
         finch.goDown();
         finch.goForward();
         }
    }
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
